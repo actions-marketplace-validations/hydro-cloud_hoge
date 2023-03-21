@@ -1,12 +1,8 @@
-name: Test Workflow
-
-on: push
-
+name: Test
+on: [push]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Run action
-        uses: ./
+      - name: Change Name
+        uses: hydro-cloud/hoge@main # アクションのリポジトリ
