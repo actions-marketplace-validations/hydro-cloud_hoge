@@ -1,0 +1,8 @@
+name: Test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check action hoge
+        uses: hydro-cloud/hoge@main # アクションのリポジトリ
